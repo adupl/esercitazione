@@ -20,6 +20,10 @@ img.logoo{
     margin-bottom: -5px ; */
 }
 
+p{
+    margin-bottom: 0;
+}
+
 .posit{
     max-width: 22px; 
     margin-left: 0px;
@@ -38,7 +42,6 @@ img.logoo{
 
 .Invia{
     color: silver;
-    margin-bottom: 10px;
    /*  margin-top: -5px; */
     font-size: 13px;
 }
@@ -52,7 +55,7 @@ img.logoo{
 .SearchBar{
     min-width:400px;
     border-radius: 0 5px 5px 0;
-    height: 90%;
+     
     border-top: none;
     border-bottom: none;
     outline: none;
@@ -68,7 +71,7 @@ img.logoo{
 }
 
 .dropdown{
-    height: 90%;
+     
     display: flex;
 }
 
@@ -85,12 +88,10 @@ img.logoo{
     justify-content: center;
 }
 
-.SearchBut{
-    height: 90%;
+.Search-Button{
     display: flex;
-    /* margin-left: -12px; */
     border-radius: 0 5px 5px 0;    
-    width: 9%;
+    min-width: 40px;
     align-items: center;
     background-color: #f3a847;
     justify-content: center;
@@ -149,18 +150,8 @@ img.logoo{
 
 .btn-menu{
     color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 1;
-    font-size: small;
-    /* margin-left: -2px; */
 }
 
 .barramenu{
  /*  height: 1rem; */
-}
-
-.napliv{
-   /*  height: 20px;
-    width: 300px; */
 }
