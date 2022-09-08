@@ -1,4 +1,5 @@
 
+
 img.logoo{
     display: -webkit-box;
     display: -moz-box;
@@ -13,7 +14,7 @@ img.logoo{
     flex-shrink: 0;
     text-decoration: none;
     padding: 1px 8px 0 6px;
-    max-width: 145px; 
+    max-width: 135px; 
     height: 100%;
 /*     margin-left: -30px;
     margin-top: -5px;
@@ -22,6 +23,8 @@ img.logoo{
 
 p{
     margin-bottom: 0;
+    font-size: small;
+    color: white;
 }
 
 .posit{
@@ -37,13 +40,13 @@ p{
    /*  margin-top: -15px;
     margin-bottom: -5px; */
     color: white;
-    font-size: 13px;
+    font-size: small;
 }
 
 .Invia{
     color: silver;
    /*  margin-top: -5px; */
-    font-size: 13px;
+    font-size: small;
 }
 
 .dropdown-toggle{
@@ -150,8 +153,14 @@ p{
 
 .btn-menu{
     color: white;
+    font-size: small;
 }
 
-.barramenu{
- /*  height: 1rem; */
+.carousel-control:active{
+    border-color: white;
+    border: 5px;
 }
+
+
+
+
