@@ -1,6 +1,6 @@
 
 $(document).ready(() => {
-    if($('#accordionExample')){
+    if($('#accordionExample').length){
         console.log('Start JS Accordion example');
     }
 });
