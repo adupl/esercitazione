@@ -1,0 +1,79 @@
+.servizi_evidenza{
+    background-color: white;
+    .servizi-title{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+    }
+    .nav-link{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .nav-link:hover{
+        color: blue;
+        font-weight: bold;
+        border-bottom: 4px solid;
+    }
+
+     .mezza-card{
+        height: 21%;
+        width: 100%;
+    }
+
+    .card{
+        margin-left: 2%;
+        border-radius: 0 0 0 0;
+        background-color: white;
+        border-color: black; 
+    }
+
+    .carte{
+        margin-left: 5%;
+    }
+
+    .card-img-top{
+        border-radius: 0 0 0 0;
+    }
+
+
+    /* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* stessa altezza della carta nel carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+ 
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+.caratt-span{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+      
+}
