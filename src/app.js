@@ -5,6 +5,7 @@ import './assets/styles/main.scss';
 import '../src/components/accordion/accordion';
 import '../src/components/dropdown/dropdown';
 import '../src/components/carousel/carousel';
+import '../src/components/footer/footer';
 
 
 $(document).ready(() => {
