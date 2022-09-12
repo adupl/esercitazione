@@ -1,0 +1,45 @@
+.banner-promozioni{
+    .donna{
+        width: 720.2px;
+        height: 605px;
+    }
+
+    .blu{
+        background-color: #0033a2;
+        color: white;
+        font-family: TIMSans;
+        padding-top: 92px;
+        padding-left: 60px;
+    }
+
+    .title{
+        font-size: 56px;
+    }
+    
+    .mobile{
+        font-size: 20px;
+    }
+
+    .prezzo{
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .rata{
+        margin-left: -110px;
+    }
+
+    .servizio{
+        color: #0164f2;
+        display: flex;
+        justify-content: space-around;
+        width: 222px;
+        height: 48px;
+        align-items: center;
+    }
+
+    .spaziatura{
+        padding-top: 100px;
+    }
+}
