@@ -20,6 +20,7 @@
 @import "common/mixins";
 @import "common/fonts";
 
+
 // Layouts
 @import "layouts/header";
 @import "layouts/footer";
@@ -31,4 +32,7 @@
 @import "./../../components/accordion/accordion";
 @import "./../../components/dropdown/dropdown";
 @import "./../../components/carousel/carousel";
+@import "./../../components/navbarTim/navbarTim";
+@import "./../../components/slickJs-example/slickJs-example";
 @import "./../../components/servizi/servizi";
+
