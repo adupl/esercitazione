@@ -1,0 +1,69 @@
+.upper-navbar-tim {
+    height: 36px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+    .upper-option {
+        color: #0033a2;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}
+
+.navbar-tim {
+    background-color: #004490;
+    width: 100%;
+    height: 64px;
+    .tim-logo{
+        height: 15%;
+    }
+    .navbar-items {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -108px;
+        .item {
+            font-weight: 500;
+            margin-top: 21px;
+            margin-left: 70px;
+            font-size: 16px;
+            color: aliceblue;
+            .logo-carrello{
+                height: 20px;
+            }
+        }
+
+        .item:last-child {
+            display: flex;
+            justify-content: center;
+            background-color: #03d0d3;
+            color: black;
+            height: 64px;
+            min-width: 172px;
+            margin-top: 0px;
+            .user-logo{
+                height: 20px;
+                margin-top: 22px;
+            }
+        }
+        .item:last-child span{
+           margin-top: 20px;
+        }
+    }
+}
+
+.under-navbar {
+    height: 64px;
+    background-color: aliceblue;
+    .under-navbar-items{
+        padding-top: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 138px;
+        .under-navbar-item{
+            font-weight: 500;
+        }
+    }
+}
