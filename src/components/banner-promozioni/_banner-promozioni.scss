@@ -1,33 +1,40 @@
 .banner-promozioni{
-    .donna{
-        width: 720.2px;
-        height: 605px;
-    }
 
     .blu{
         background-color: #0033a2;
         color: white;
         font-family: TIMSans;
-        padding-top: 92px;
-        padding-left: 60px;
+        padding: 5%;
     }
 
     .title{
-        font-size: 56px;
+        font-size: 300%;
+    }
+
+    .title-2{
+        font-size: 300%;
+        display: flex;
+        justify-content: right;
     }
     
     .mobile{
-        font-size: 20px;
+        font-size: 150%;
+    }
+
+    .donna{
+        width: 100%;
+        height: 100%;
+        object-fit: cover
     }
 
     .prezzo{
         display: flex;
         justify-content: center;
-        white-space: nowrap;
     }
 
-    .rata{
-        margin-left: -110px;
+    .price{
+        display: flex;
+        justify-content: left;
     }
 
     .servizio{
@@ -40,6 +47,20 @@
     }
 
     .spaziatura{
-        padding-top: 100px;
+        padding-top: 15%;
+    }
+    
+    .euro{
+        font-size: 150%;
+    }
+
+    .change{
+        background-color:  #0033a2;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .white{
+        color: white;
     }
 }
