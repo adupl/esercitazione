@@ -28,79 +28,27 @@
 
 
     <div class="carousel slide" data-ride="carousel" id="postsCarousel">
-
       <section class="container-fluid p-t-0 m-t-2 carousel-servizi">
-         <div class="card">
-              <img class="card-img-top" src="assets/images/prima-card.png" alt="Card image cap">
-              <div class="card-body">
-                <div class="caratteristiche-card d-flex">
-                  <div class="caratteristica-1">
-                    <span class="caratt-span">SMART OFFICE</span>
-                  </div>
-                  <div class="caratteristica-2">
-                    <span class="caratt-span">COLLABORATION</span>
-                  </div>
-                </div>
-                <h5><b>TIM Work Smart</b></h5>
-                <span class="Ovunque-la-tua-sala">
-                  Ovunque, la tua sala riunioni virtuale.
-                </span>
-                
-                <p class="DA">DA</p>
-                <div class="prezzo d flex">
-                <div class="prezzo-num d-flex">
-                <h2 class="sei"><b>6</b></h2>
-                <div class="euro-mese">
-                  <p>€</p>
-                  <p class="al-mese">AL MESE</p>
-                </div>
-              </div>
-              </div>
-              <div class="scopri w-100 center">
-                <span>SCOPRI</span>
-              </div>
+        
+        {{> card-dim/card-dim
+          title-card="pippo"
+          price="7"
+          class="red"
+          example="giorgio"
+        }}
+         {{> card-dim/card-dim
+          title-card="antonio"
+          price="5"
+        }}
+         {{> card-dim/card-dim
+          title-card="giorgio"
+          price="3"
+        }}
+         {{> card-dim/card-dim
+          title-card="pippo"
+          price="6"
+        }}
 
-              </div>
-            </div>
-             <div class="card">
-              <img class="card-img-top" src="assets/images/prima-card.png" alt="Card image cap">
-              <div class="card-body">
-                <div class="caratteristiche-card d-flex">
-                  <div class="caratteristica-1">
-                    <p class="caratt-span">SMART OFFICE</p>
-                  </div>
-                  <div class="caratteristica-2">
-                    <p class="caratt-span">COLLABORATION</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <div class="card">
-              <img class="card-img-top" src="assets/images/prima-card.png" alt="Card image cap">
-              <div class="card-body">
-                <div class="caratteristiche-card d-flex">
-                  <div class="caratteristica-1">
-                    <p class="caratt-span">SMART OFFICE</p>
-                  </div>
-                  <div class="caratteristica-2">
-                    <p class="caratt-span">COLLABORATION</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <div class="card">
-              <img class="card-img-top" src="assets/images/prima-card.png" alt="Card image cap">
-              <div class="card-body">
-                <div class="caratteristiche-card d-flex">
-                  <div class="caratteristica-1">
-                    <p class="caratt-span">SMART OFFICE</p>
-                  </div>
-                  <div class="caratteristica-2">
-                    <p class="caratt-span">COLLABORATION</p>
-                  </div>
-                </div>
-              </div>
-            </div>
       </section>
 
 

@@ -87,29 +87,30 @@
                 .under-nav-togg {
                     height: 100%;
 
-                    .under-nav-drop {
-                        position: absolute;
-                        width: 100%;
+                   
+                }
+                .under-nav-drop {
+                    position: absolute;
+                    width: 100%;
 
-                        .drop-result {
-                            background-color: aliceblue;
-                            border: 1px solid rgb(173, 173, 173);
+                    .drop-result {
+                        background-color: aliceblue;
+                        border: 1px solid rgb(173, 173, 173);
 
-                            .btn-accedi {
-                                background-color: #0033a2;
-                                color: white;
-                                border-radius: 0px;
-                            }
+                        .btn-accedi {
+                            background-color: #0033a2;
+                            color: white;
+                            border-radius: 0px;
+                        }
 
-                            .digitalStore-column {
-                                padding: 20px;
+                        .digitalStore-column {
+                            padding: 20px;
 
-                            }
+                        }
 
-                            .option-columns-tim {
-                                font-size: 16px;
-                                padding: 54px;
-                            }
+                        .option-columns-tim {
+                            font-size: 16px;
+                            padding: 54px;
                         }
                     }
                 }

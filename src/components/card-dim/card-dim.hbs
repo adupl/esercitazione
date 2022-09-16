@@ -1,0 +1,38 @@
+<div class="card-dim {{class}}" >
+    <img class="card-img-top" src="assets/images/prima-card.png" alt="Card image cap">
+    <div class="card-body">
+        <div class="caratteristiche-card d-flex">
+            <div class="charat-card">
+                <span class="caratt-span">SMART OFFICE</span>
+            </div>
+            <div class="charat-card">
+                <span class="caratt-span">COLLABORATION</span>
+            </div>
+        </div>
+        <h5><b>{{title-card}}</b></h5>
+        <span class="Ovunque-la-tua-sala">
+            Ovunque, la tua sala riunioni virtuale.
+        </span>
+
+        <p class="DA">DA</p>
+        <div class="prezzo d flex">
+            <div class="prezzo-num d-flex">
+                <h2 class="sei"><b>{{price}}</b></h2>
+                <div class="euro-mese">
+                    <p>€</p>
+                    <p class="al-mese">AL MESE</p>
+                </div>
+            </div>
+        </div>
+        <div class="scopri w-100 center {{btn-class}}">
+            <span>SCOPRI</span>
+        </div>
+
+        {{#if example}}
+        <div class="{{example}}">
+            example
+        </div>
+        {{/if}}
+
+    </div>
+</div>

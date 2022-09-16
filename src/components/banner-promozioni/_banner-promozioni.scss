@@ -5,19 +5,19 @@
         flex-direction: column-reverse;
         display: flex;
         }
-    }
-
-    .incolonnata {
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            height: 100%;
+        .incolonnata {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
+
+  
 
     .blu {
         background-color: #0033a2;
         color: white;
-        font-family: TIMSans;
         padding: 7%;
     }
 
@@ -38,9 +38,10 @@
     .donna{
         width: 100%;
         height: 100%;
-        object-fit: cover
+        object-fit: cover;
     }
 
+    
     .prezzo{
         display: flex;
         justify-content: center;
