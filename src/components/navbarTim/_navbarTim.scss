@@ -1,79 +1,141 @@
-.upper-navbar-tim {
-    height: 36px;
-    background-color: aliceblue;
-
-    .upper-navbar-items {
-        display: flex;
-        justify-content: center;
+.wrap_tim_navbar {
+    .upper-navbar-tim {
+        height: 36px;
+        background-color: aliceblue;
 
         .upper-option {
             color: #0033a2;
             font-size: 12px;
-            width:10%;
+            width: 10%;
             margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .upper-option::after {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #0033a2;
         }
     }
-}
 
-.navbar-tim {
-    background-color: #004490;
-    width: 100%;
-    height: 64px;
+    .navbar-tim {
+        background-color: #004490;
+        width: 100%;
+        height: 64px;
 
-    .tim-logo {
-        height: 15%;
-    }
+        .tim-logo {
+            max-height: 62px;
+        }
 
-    .navbar-items {
-        display: flex;
-        justify-content: space-between;
-        margin-left: -108px;
+        .navbar-items {
 
-        .item {
-            font-weight: 500;
-            margin-top: 21px;
-            font-size: 16px;
-            color: aliceblue;
+            .item {
+                flex-direction: column;
+                font-weight: 500;
 
-            .logo-carrello {
-                height: 20px;
+                font-size: 16px;
+                color: aliceblue;
+                text-decoration: none;
+
+                .logo-carrello {
+                    height: 20px;
+                }
+            }
+
+            .item:last-child {
+                flex-direction: unset;
+                display: flex;
+                justify-content: center;
+                background-color: #03d0d3;
+                color: black;
+                height: 64px;
+                min-width: 172px;
+
+
+                .user-logo {
+                    height: 20px;
+                    margin-top: 22px;
+                }
+            }
+
+            .item:last-child span {
+                margin-top: 20px;
             }
         }
+    }
 
-        .item:last-child {
+    .under-navbar {
+        position: relative;
+        height: 64px;
+        background-color: aliceblue;
+
+        .under-navbar-items {
+
+            align-items: center;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            background-color: #03d0d3;
-            color: black;
-            height: 64px;
-            min-width: 172px;
-            margin-top: 0px;
+            justify-content: space-between;
 
-            .user-logo {
-                height: 20px;
-                margin-top: 22px;
+            .under-navbar-item {
+                width: 100%;
+                position: unset;
+                font-weight: 500;
+                height: 100%;
+
+                .under-nav-togg {
+                    height: 100%;
+
+                    .under-nav-drop {
+                        position: absolute;
+                        width: 100%;
+
+                        .drop-result {
+                            background-color: aliceblue;
+                            border: 1px solid rgb(173, 173, 173);
+
+                            .btn-accedi {
+                                background-color: #0033a2;
+                                color: white;
+                                border-radius: 0px;
+                            }
+
+                            .digitalStore-column {
+                                padding: 20px;
+
+                            }
+
+                            .option-columns-tim {
+                                font-size: 16px;
+                                padding: 54px;
+                            }
+                        }
+                    }
+                }
             }
-        }
-
-        .item:last-child span {
-            margin-top: 20px;
         }
     }
 }
 
-.under-navbar {
-    height: 64px;
+
+.drop-result {
     background-color: aliceblue;
+    border: 1px solid rgb(173, 173, 173);
 
-    .under-navbar-items {
-        padding-top: 20px;
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 138px;
+    .btn-accedi {
+        background-color: #0033a2;
+        color: white;
+        border-radius: 0px;
+    }
 
-        .under-navbar-item {
-            font-weight: 500;
-        }
+    .digitalStore-column {
+        padding: 20px;
+
+    }
+
+    .option-columns-tim {
+        font-size: 16px;
+        padding: 54px;
     }
 }
