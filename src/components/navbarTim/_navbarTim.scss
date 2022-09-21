@@ -1,7 +1,7 @@
 .wrap_tim_navbar {
     .upper-navbar-tim {
         height: 36px;
-        background-color: aliceblue;
+        background-color: #fff;
 
         .upper-option {
             color: #0033a2;
@@ -36,7 +36,7 @@
                 font-weight: 500;
 
                 font-size: 16px;
-                color: aliceblue;
+                color: #fff;
                 text-decoration: none;
 
                 .logo-carrello {
@@ -69,7 +69,7 @@
     .under-navbar {
         position: relative;
         height: 64px;
-        background-color: aliceblue;
+        background-color: #fff;
 
         .under-navbar-items {
 
@@ -87,14 +87,22 @@
                 .under-nav-togg {
                     height: 100%;
 
-                   
+                   &.active{
+                    color:#004490;
+                    font-weight: 500;
+                   }
                 }
                 .under-nav-drop {
                     position: absolute;
                     width: 100%;
+                    padding: 0px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
 
                     .drop-result {
-                        background-color: aliceblue;
+                        background-color: #fff;
                         border: 1px solid rgb(173, 173, 173);
 
                         .btn-accedi {
@@ -140,3 +148,4 @@
         padding: 54px;
     }
 }
+

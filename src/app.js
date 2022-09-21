@@ -1,6 +1,9 @@
 import $ from "jquery";
 import 'slick-carousel';
 import './assets/styles/main.scss';
+import "popper.js";
+import 'bootstrap';
+
 
 // COMPONENT
 import '../src/components/accordion/accordion';
@@ -12,7 +15,6 @@ import '../src/components/servizi/servizi';
 import '../src/components/navbarTim/navbarTim';
 import '../src/components/slickJs-example/slickJs-example';
 import '../src/components/card-dim/card-dim';
-
 
 
 $(document).ready(() => {
