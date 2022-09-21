@@ -12,11 +12,16 @@
         }
 
         .upper-option::after {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 10px solid #0033a2;
+            display: inline-block;
+         
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.5em solid transparent;
+            border-right: 0.5em solid transparent;
+            border-bottom: 0.5em solid;
+            border-left: 0.5em solid transparent;
+            margin-left: -30px;
+            margin-bottom: -17px;
         }
     }
 
@@ -87,17 +92,19 @@
                 .under-nav-togg {
                     height: 100%;
 
-                   &.active{
-                    color:#004490;
-                    font-weight: bold;
-                    border-bottom: 2px solid #004490;
-                   }
+                    &.active {
+                        color: #004490;
+                        font-weight: bold;
+                        border-bottom: 2px solid #004490;
+                    }
                 }
+
                 .under-nav-drop {
                     position: absolute;
                     width: 100%;
                     padding: 0px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: black;
                     }
@@ -114,6 +121,7 @@
                             color: white;
                             border-radius: 0px;
                         }
+
                         .btn-accedi::after {
                             display: inline-block;
                             margin-left: 0.255em;
@@ -130,7 +138,8 @@
                             padding-left: 144px;
                             padding-top: 44px;
                         }
-                        .digitalStore-column h3{
+
+                        .digitalStore-column h3 {
                             margin-left: -138px;
                         }
 
@@ -139,7 +148,8 @@
                             padding: 60px;
                             padding-top: 95px;
                         }
-                        .option-columns-tim .row .col{
+
+                        .option-columns-tim .row .col {
                             margin-top: 24px;
                         }
                     }
@@ -170,4 +180,3 @@
         padding: 54px;
     }
 }
-
