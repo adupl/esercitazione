@@ -18,7 +18,8 @@
     }
     .slick-prev{
         position: absolute;
-        top: 30%;
+        top: 27%;
+        padding: 10px;
         border: solid;
         border-width: thin;
         z-index: 1;
@@ -26,6 +27,7 @@
     .slick-next{
         position: absolute;
         top: 34%;
+        padding: 10px;
         border: solid;
         border-width: thin;
     }
@@ -51,6 +53,14 @@
     }
     .img-primary{
         margin-left: 15px;
+    }
+
+    .slick-slide{
+        margin-right: 30px;
+    }
+
+    .slick-list{
+        margin-left: 5%;
     }
    
 }

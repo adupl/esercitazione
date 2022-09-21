@@ -1,52 +1,51 @@
-<div class="card-dim" >
-    <div class="d-flex flex-column justify-content-between">
-    <img class="card-img-top" src={{images}} alt="Card image cap">
-    <div class="card-body">
-        <div class="caratteristiche-card d-flex">
-                {{#if 1-charact}}
-                <div class="charact-wrap {{color-1}}">
-                <label class="charact-label ">{{1-charact}}</label>
+<div class="card-dim">
+    <div class="d-flex flex-column justify-content-between wrapper-card-content">
+        <img class="card-img-top" src={{images}} alt="Card image cap">
+        <div class="card-body">
+            <div class="top-content">
+                <div class="caratteristiche-card d-flex">
+                    {{#if 1-charact}}
+                    <div class="charact-wrap {{color-1}}">
+                        <label class="charact-label ">{{1-charact}}</label>
+                    </div>
+                    {{/if}}
+
+                    {{#if 2-charact}}
+                    <div class="charact-wrap {{color-2}}">
+                        <label class="charact-label ">{{2-charact}}</label>
+                    </div>
+                    {{/if}}
+
+                    {{#if 3-charact}}
+                    <div class="charact-wrap {{color-3}}">
+                        <label class="charact-label">
+                            {{3-charact}}
+                        </label>
+                    </div>
+                    {{/if}}
                 </div>
-                {{/if}} 
-
-                {{#if 2-charact}}
-                <div class= "charact-wrap {{color-2}}">
-                <label class="charact-label ">{{2-charact}}</label>  
+                <h5><b>{{title-card}}</b></h5>
+                <div class="description-wrap">
+                    <span class="description">
+                        {{description}}
+                    </span>
                 </div>
-                {{/if}} 
-
-                {{#if 3-charact}}
-                <div class="charact-wrap {{color-3}}">
-                    <label class="charact-label">
-                        {{3-charact}}
-                    </label>
-                </div>    
-                {{/if}} 
-
-                
-            
-        </div>
-
-        <h5><b>{{title-card}}</b></h5>
-        <div class="description-wrap">
-        <span class="description">
-            {{description}}
-        </span>
-        </div>
-        
-        <p class="DA">DA</p>
-        <div class="price-wrap d flex">
-            <div class="d-flex">
-                <h2 class="price"><b>{{price}}</b></h2>
-                <div class="euro-month">
-                    <p>€</p>
-                    <p class="month">AL MESE</p>
+            </div>
+            <div class="bottom-content">
+                <p class="DA">DA</p>
+                <div class="price-wrap d flex">
+                    <div class="d-flex">
+                        <h2 class="price"><b>{{price}}</b></h2>
+                        <div class="euro-month">
+                            <p>€</p>
+                            <p class="month">AL MESE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scopri">
+                    <a class="scopri-span" href="#">SCOPRI</a>
                 </div>
             </div>
         </div>
-        <div class="scopri">
-            <a class="scopri-span" href="#">SCOPRI</a>
-        </div>
-    </div>
     </div>
 </div>
