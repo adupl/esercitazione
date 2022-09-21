@@ -16,13 +16,41 @@
         font-weight: bold;
         border-bottom: 4px solid;
     }
-
-     .mezza-card{
-        height: 21%;
-        width: 100%;
+    .slick-prev{
+        position: absolute;
+        top: 30%;
+        border: solid;
+        border-width: thin;
+        z-index: 1;
+    }
+    .slick-next{
+        position: absolute;
+        top: 34%;
+        border: solid;
+        border-width: thin;
     }
 
-    
+    .carousel-servizi{
+        position: relative;
+        
+    }
 
+    .col-8{
+        padding: 4%;
+    }
+    .col-4{
+        text-align: right;
+        padding: 4%;
+    }
+    .primary-wrap{
+        background-color: blue;
+        color: #fff;
+        padding: 12px;
+        margin-left: 25%;
+        text-decoration: none;
+    }
+    .img-primary{
+        margin-left: 15px;
+    }
    
 }
