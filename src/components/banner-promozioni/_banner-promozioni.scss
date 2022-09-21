@@ -1,54 +1,5 @@
 .banner-promozioni {
 
-    .reverse {
-    @include media-breakpoint-down(md) {
-        flex-direction: column-reverse;
-        display: flex;
-        }
-        .total-column {  
-            @include media-breakpoint-down(md) {
-                width: 100%;
-                height: 100%;
-            }
-            .photo {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-   
-        .banner-blue {
-            background-color: #0033a2;
-            color: white;
-            padding: 7%;
-            .title {
-                font-size: 300%;
-            }
-            .mobile {
-                font-size: 150%;
-            }
-            .banner-footer {
-                padding-top: 15%;
-                @include media-breakpoint-down(md) {
-                    flex-direction: column;
-                    display: flex;
-                }
-                .service-btn {
-                    color: #0164f2;
-                    padding: 10px;
-                    align-items: center;
-                    @include media-breakpoint-down(md) {
-                    margin-bottom: 10%;
-                    } 
-                }
-                .space-middle{
-                    padding-right: 20px;
-                }
-            }
-        }       
-
-    }  
-
     .carousel-control-prev{
         justify-content: left;
         width: 0%;
