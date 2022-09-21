@@ -2,137 +2,38 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" class="active"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
+            <div class="carousel-item ">
+                {{> content-carousel-banner/content-carousel-banner
+                    image="assets/images/3colleghi.png"
+                }}
+            </div>
             <div class="carousel-item active">
-                <div class="container-fluid">
-                    <div class="row invertita">
-                        <div class="col-6 incolonnata blu">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="title"><b>Domain Threat <br>Intelligence</b></h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="mobile"><b>Porta una linea mobile in TIM Business<br> e la paghi il 50% in
-                                            meno.</b>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row spaziatura">
-                                <div class="col">
-                                    <div class="row prezzo">
-                                        <div class="col-6">
-                                            <h3 class="title-2">85 </h3>
-                                        </div>
-                                        <div class="col-6">
-                                            <span class="euro">€</span> <br><span class="price"> AL MESE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button class="servizio"><span>SCOPRI IL SERVIZIO</span><span> > </span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 incolonnata">
-                            <img class="donna" src="assets/images/img2carousel.png" alt="immagine">
-                        </div>
-                    </div>
-                </div>
+                {{> content-carousel-banner/content-carousel-banner
+                    image="assets/images/img2carousel.png"
+                }}
             </div>
             <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="row invertita">
-                        <div class="col-6 incolonnata blu">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="title"><b>Domain Threat <br>Intelligence</b></h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="mobile"><b>Porta una linea mobile in TIM Business<br> e la paghi il 50% in
-                                            meno.</b>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row spaziatura">
-                                <div class="col">
-                                    <div class="row prezzo">
-                                        <div class="col-6">
-                                            <h3 class="title-2">85 </h3>
-                                        </div>
-                                        <div class="col-6">
-                                            <span class="euro">€</span> <br><span class="price"> AL MESE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button class="servizio"><span>SCOPRI IL SERVIZIO</span><span> > </span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 incolonnata">
-                            <img class="donna" src="assets/images/img2carousel.png" alt="immagine">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="row invertita">
-                        <div class="col-6 incolonnata blu">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="title"><b>Domain Threat <br>Intelligence</b></h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="mobile"><b>Porta una linea mobile in TIM Business<br> e la paghi il 50% in
-                                            meno.</b>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row spaziatura">
-                                <div class="col">
-                                    <div class="row prezzo">
-                                        <div class="col-6">
-                                            <h3 class="title-2">85 </h3>
-                                        </div>
-                                        <div class="col-6">
-                                            <span class="euro">€</span> <br><span class="price"> AL MESE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button class="servizio"><span>SCOPRI IL SERVIZIO</span><span> > </span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 incolonnata">
-                            <img class="donna" src="assets/images/img2carousel.png" alt="immagine">
-                        </div>
-                    </div>
-                </div>
+                {{> content-carousel-banner/content-carousel-banner
+                    image="assets/images/example.jpg"
+                }}
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
-            <span class="carousel-control-prev" aria-hidden="true"><img src="assets/images/back.png" class="white p-2 d-flex justify-content-center" alt="back"></span>
+            <span class="carousel-control-prev" aria-hidden="true"><img src="assets/images/back.png" class="icon-button p-2 d-flex justify-content-center" alt="back"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
-            <span class="carousel-control-next" aria-hidden="true"><img src="assets/images/next.png" class="white p-2 d-flex justify-content-center" alt="next"></span>
+            <span class="carousel-control-next" aria-hidden="true"><img src="assets/images/next.png" class="icon-button p-2 d-flex justify-content-center" alt="next"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> 
 </div>

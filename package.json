@@ -65,9 +65,10 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
-    "bootstrap": "5.2.1",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1",
     "gsap": "^3.10.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.6.1",
     "popper.js": "^1.14.4",
     "slick-carousel": "^1.8.1"
   }

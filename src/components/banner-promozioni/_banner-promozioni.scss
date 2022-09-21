@@ -1,90 +1,9 @@
 .banner-promozioni {
 
-    .invertita {
-    @include media-breakpoint-down(sm) {
-        flex-direction: column-reverse;
-        display: flex;
-        }
-        .incolonnata {
-            @include media-breakpoint-down(sm) {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-
-  
-
-    .blu {
-        background-color: #0033a2;
-        color: white;
-        padding: 7%;
-    }
-
-    .title{
-        font-size: 300%;
-    }
-
-    .title-2{
-        font-size: 300%;
-        display: flex;
-        justify-content: right;
-    }
-    
-    .mobile{
-        font-size: 150%;
-    }
-
-    .donna{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    
-    .prezzo{
-        display: flex;
-        justify-content: center;
-    }
-
-    .price{
-        display: flex;
-        justify-content: left;
-    }
-
-    .servizio{
-        color: #0164f2;
-        display: flex;
-        justify-content: space-around;
-        width: 222px;
-        height: 48px;
-        align-items: center;
-    }
-
-    .spaziatura{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 15%;
-        @include media-breakpoint-down(sm) {
-            flex-direction: column;
-            display: flex;
-        }
-    }
-    
-    .euro{
-        font-size: 150%;
-    }
-
-    .change{
-        background-color:  #0033a2;
-        color: white;
-        border: 1px solid white;
-    }
-
     .carousel-control-prev{
         justify-content: left;
         width: 0%;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
@@ -94,7 +13,7 @@
         width: 0%;
         bottom: 6%;
         right: auto;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
@@ -103,7 +22,7 @@
         right: 20%;
     }
 
-    .white {
+    .icon-button {
         border: 1px solid white;
     }
 }

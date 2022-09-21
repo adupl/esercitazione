@@ -1,7 +1,7 @@
 .wrap_tim_navbar {
     .upper-navbar-tim {
         height: 36px;
-        background-color: aliceblue;
+        background-color: #fff;
 
         .upper-option {
             color: #0033a2;
@@ -36,7 +36,7 @@
                 font-weight: 500;
 
                 font-size: 16px;
-                color: aliceblue;
+                color: #fff;
                 text-decoration: none;
 
                 .logo-carrello {
@@ -69,7 +69,7 @@
     .under-navbar {
         position: relative;
         height: 64px;
-        background-color: aliceblue;
+        background-color: #fff;
 
         .under-navbar-items {
 
@@ -87,30 +87,60 @@
                 .under-nav-togg {
                     height: 100%;
 
-                   
+                   &.active{
+                    color:#004490;
+                    font-weight: bold;
+                    border-bottom: 2px solid #004490;
+                   }
                 }
                 .under-nav-drop {
                     position: absolute;
                     width: 100%;
+                    padding: 0px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
 
                     .drop-result {
-                        background-color: aliceblue;
+                        background-color: #fff;
                         border: 1px solid rgb(173, 173, 173);
 
                         .btn-accedi {
+                            width: 100%;
+                            max-width: 130px;
+                            margin-top: 49px;
                             background-color: #0033a2;
                             color: white;
                             border-radius: 0px;
                         }
+                        .btn-accedi::after {
+                            display: inline-block;
+                            margin-left: 0.255em;
+                            vertical-align: 0.255em;
+                            content: "";
+                            border-top: 0.3em solid transparent;
+                            border-right: 0.3em solid transparent;
+                            border-bottom: 0.3em solid transparent;
+                            border-left: 0.3em solid;
+                        }
 
                         .digitalStore-column {
-                            padding: 20px;
-
+                            padding: 0px;
+                            padding-left: 144px;
+                            padding-top: 44px;
+                        }
+                        .digitalStore-column h3{
+                            margin-left: -138px;
                         }
 
                         .option-columns-tim {
                             font-size: 16px;
-                            padding: 54px;
+                            padding: 60px;
+                            padding-top: 95px;
+                        }
+                        .option-columns-tim .row .col{
+                            margin-top: 24px;
                         }
                     }
                 }
@@ -140,3 +170,4 @@
         padding: 54px;
     }
 }
+
