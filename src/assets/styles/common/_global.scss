@@ -13,6 +13,23 @@ body {
 	background-color: $light-gray;
 	//font-family: "Barlow Condensed";
 	font-family: "Roboto";
+
+	::-webkit-scrollbar-track{
+		border-radius: 7.5px;
+		background-color: #eeeeee;
+	  }
+	
+	::-webkit-scrollbar{
+		border-radius: 7.5px;
+		background-color: #eeeeee;
+		width: 8px;
+		height: 8px;
+	  }
+	
+	::-webkit-scrollbar-thumb{
+		border-radius: 7.5px;
+		background-color: #0033a2;
+	  }
 }
 
 p{

@@ -4,13 +4,15 @@
     border-radius: 0 0 0 0;
     background-color: white;
     border-color: black;
-    width: 80% !important;
     display: inline-block;
     border: solid;
     border-width: thin;    
     min-height: 500px;
     height: 100%;
 
+    .wrapper-card-content{
+        min-height:550px;
+    }
     
     .card-img-top{
         border-radius: 0 0 0 0;
@@ -19,9 +21,17 @@
     }
     .card-body{
         padding: 5%;  
-            .caratteristiche-card{
-                width: 100%;
-                flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .description-wrap{
+            max-height: 70px;
+            overflow-y: auto;
+        }
+        .caratteristiche-card{
+            width: 100%;
+            flex-wrap: wrap;
 
             .charact-wrap{
                 white-space: nowrap;       
@@ -40,17 +50,12 @@
                     &.blue{
                         background-color: blue;
                     }
-            .charact-label{
-                font-size: 11px;
+                .charact-label{
+                    font-size: 11px;
+                }
             }
-            }
-            }
-            
-              
-       
-        .DA{
-            margin-top: 30px;
         }
+            
         .euro-month{
             margin-left: 10px;
         }
@@ -78,10 +83,6 @@
             text-decoration: none;
         }
 
-        }        
-
-        
-    
-       
-    }
+    }      
+}
 
