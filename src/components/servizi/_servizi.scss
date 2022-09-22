@@ -26,7 +26,7 @@
     }
     .slick-next{
         position: absolute;
-        top: 34%;
+        top: 33%;
         padding: 10px;
         border: solid;
         border-width: thin;
@@ -37,7 +37,7 @@
         
     }
 
-    .col-8{
+    .solution-wrap{
         padding: 4%;
     }
     .col-4{
@@ -61,6 +61,28 @@
 
     .slick-list{
         margin-left: 5%;
+    }
+
+    .slick-dots{
+    display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: disc;
+    }  
+
+    .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+    } 
+    
+    .slick-dots li button {
+        font-size: 0;
+    	width: 1rem;
+    	height: 1rem;
+		border-radius: 100%;
+    	background-color: white;  
+        border-color: blue; 
     }
    
 }
