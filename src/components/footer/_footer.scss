@@ -3,16 +3,24 @@
         margin-top: 6%;
         margin-left: 3%;
         @include media-breakpoint-down(md){
-            margin-left: 2%;
+            margin-left: 1%;
+            padding: 1%;
         }
     }
-    .paragrafo{
+    
+    .paragraph{
         font-size: 14px;
         line-height: 1.70;
         color: #000;
         font-weight: normal;
         padding: 2%;
         display: block;
+        .paragraph-link {
+            &a{
+            color: white !important;
+            text-decoration-line: none !important;
+            }
+        }
         @include media-breakpoint-down(md){
             display: none;
         }
@@ -31,6 +39,28 @@
 
         }
     }
+    .social-mobile{
+        display: none;
+        @include media-breakpoint-down(md){
+            display: block;
+        .paragraph-mobile{
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            margin: 3%;
+        }
+        }
+        .container-img-mobile{
+            width: 100%;
+            justify-content: space-around;
+            padding: 10px;
+
+            .img-social-mobile{
+                min-width: 35px;
+                min-height: 35px;
+            }
+        }
+    }
     .accordion{
         display: none;
         @include media-breakpoint-down(md){
@@ -45,9 +75,18 @@
     
     .footer-row{
         background-color: #001136;
-        color: white;
+        .footer-row a{
+            color: white !important;
+            text-decoration-line:none;
+        }
+        
         .text-right-custom{
             text-align: end;
+            @include media-breakpoint-down(md){
+                text-align: start;
+                margin: 2%;
+                color: white;
+            }
         }
     }
     
