@@ -1,9 +1,10 @@
-<div class="card-dim">
-    <div class="d-flex flex-column justify-content-between wrapper-card-content">
+<div class="card-dim {{layout}}">
+    <div class="d-flex flex-column justify-content-between wrapper-card-content {{size-card}}">
         <img class="card-img-top" src={{images}} alt="Card image cap">
         <div class="card-body">
             <div class="top-content">
                 <div class="caratteristiche-card d-flex">
+                    {{#if caratt}}
                     {{#if 1-charact}}
                     <div class="charact-wrap {{color-1}}">
                         <label class="charact-label ">{{1-charact}}</label>
@@ -23,16 +24,19 @@
                         </label>
                     </div>
                     {{/if}}
+                    {{/if}}
                 </div>
-                <h5><b>{{title-card}}</b></h5>
+                <h5 class="card-title"><b>{{title-card}}</b></h5>
                 <div class="description-wrap">
                     <span class="description">
                         {{description}}
                     </span>
                 </div>
             </div>
+
             <div class="bottom-content">
-                <p class="DA">DA</p>
+                {{#if offer}}
+                <p class="DA">{{da}}</p>
                 <div class="price-wrap d flex">
                     <div class="d-flex">
                         <h2 class="price"><b>{{price}}</b></h2>
@@ -42,9 +46,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="scopri">
-                    <a class="scopri-span" href="#">SCOPRI</a>
+                {{/if}}
+
+                <div class="button-card-wrap">
+                    <a class="button-card" href="#">{{button-content}}</a>
                 </div>
+
             </div>
         </div>
     </div>

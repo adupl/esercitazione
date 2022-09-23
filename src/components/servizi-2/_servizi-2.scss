@@ -1,5 +1,6 @@
 .wrap-servizi-2{
     background-color: #0033a2;
+    min-height: 810px;
         .title-wrap{
             text-align: center;
             justify-content: center;
@@ -11,19 +12,40 @@
             font-size: 30px;
             color: white;
         }
-
-        .nav-link{
-            color: white;  
-        }
-        .nav-link:hover{
-                font-weight: bold;
-                color: white;
-                border-color: white;
+        .menu-2{
+            height: 100%;
+            width: 100%;
+            align-items: end;
+            .menu-item-2{
+                max-height: 43px;
+                .menu-link-2{
+                    color: white; 
+                    height: 100%; 
+                }
+                .menu-link-2:hover{
+                    font-weight: bold;
+                    color: white;
+                    border-bottom: 4px solid;
+                    border-color: white;
+                }
             }
+            
+
+            
+        }
+        
 
         .slick-dots li button {
-            background-color: blue;  
-            border-color: white; 
+            font-size: 0;
+            width: 2rem;
+            height: 1px;
+            border: solid 1px blue;
+            background-color: blue;
+        }
+        
+        li.slick-active button {
+            background-color: white;
+            border-color: white;
         }
         .slick-prev{
             border-color: white;
@@ -31,5 +53,6 @@
         .slick-next{
             border-color: white;
         }
+        
 
 }

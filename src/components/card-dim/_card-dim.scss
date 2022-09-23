@@ -1,17 +1,31 @@
 .card-dim{
-    /* margin-left: 20%; */
-    /* margin-right: 20px */
-    border-radius: 0 0 0 0;
     background-color: white;
-    border-color: black;
-    display: inline-block;
-    border: solid;
-    border-width: thin;    
-    min-height: 500px;
+    min-height: 472px;
     height: 100%;
-
+    display: inline-block;
+    &.card-border{
+        border-radius: 0 0 0 0;
+        border-color: black;
+        border: solid;
+        border-width: thin;  
+    }
+    &.card-light{
+        .button-card-wrap{    
+            width: 20%;
+        }
+    }
+      
     .wrapper-card-content{
-        min-height:550px;
+        &.large{
+            min-height: 520px;
+        }
+        &.mid{
+            min-height: 470px;
+        }
+    }
+    .card-title{
+        min-height: 30px;
+        margin-top: 7px;
     }
     
     .card-img-top{
@@ -25,9 +39,10 @@
         flex-direction: column;
         justify-content: space-between;
 
-        .description-wrap{
-            max-height: 70px;
+        .description-wrap{           
+            max-height: 75px;
             overflow-y: auto;
+            margin-top: 8px;
         }
         .caratteristiche-card{
             width: 100%;
@@ -69,16 +84,16 @@
             font-size: 12px;
         }
     
-        .scopri{
-            margin-top: 10px;
+        .button-card-wrap{
             text-align: center;
             color: blue;
             border: solid;
             border-width: 2px;
             padding: 2%;
+            font-size: 100%;
         }
 
-        .scopri-span{
+        .button-card{
             color: blue;
             text-decoration: none;
         }

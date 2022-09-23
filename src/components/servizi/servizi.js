@@ -9,7 +9,7 @@ $(document).ready(() => {
             slidesToScroll: 1,
             prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/images/back.png'>",
             nextArrow:"<img class='a-right control-c next slick-next' src='../assets/images/next.png'>",
-            dots: true,
+            dots: false,
             responsive: [
                 {
                     breakpoint: 960,

@@ -13,6 +13,7 @@ import '../src/components/banner-promozioni/banner-promozioni';
 import '../src/components/footer/footer';
 import '../src/components/servizi/servizi';
 import '../src/components/servizi-2/servizi-2';
+import '../src/components/services-news/services-news';
 import '../src/components/navbarTim/navbarTim';
 import '../src/components/slickJs-example/slickJs-example';
 import '../src/components/card-dim/card-dim';
