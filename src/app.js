@@ -18,6 +18,7 @@ import '../src/components/navbarTim/navbarTim';
 import '../src/components/slickJs-example/slickJs-example';
 import '../src/components/card-dim/card-dim';
 import '../src/components/content-carousel-banner/content-carousel-banner';
+import '../src/components/promozioni-slick/promozioni-slick';
 
 
 $(document).ready(() => {

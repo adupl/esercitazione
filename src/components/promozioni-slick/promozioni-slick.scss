@@ -1,0 +1,30 @@
+.container-promo{
+    background-color: #001136;
+    .title-promo{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.31;
+        color: white;
+        text-align: center;
+    }
+    .subtitle-promo{
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .promotions-link{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .container-img{
+        width: 977px;
+        height: 395px;
+        .img-promo{
+            width: 100%;
+            height: 100%;
+            object-fit:contain;
+        }
+    }
+}

@@ -1,93 +1,104 @@
-.container-footer{
-    .tim-logo{
+.container-footer {
+    .tim-logo {
         margin-top: 6%;
         margin-left: 3%;
-        @include media-breakpoint-down(md){
+
+        @include media-breakpoint-down(md) {
             margin-left: 1%;
             padding: 1%;
         }
     }
-    
-    .paragraph{
+
+    .paragraph {
         font-size: 14px;
         line-height: 1.70;
         color: #000;
         font-weight: normal;
         padding: 2%;
         display: block;
-        .paragraph-link {
-            &a{
-            color: white !important;
-            text-decoration-line: none !important;
-            }
-        }
-        @include media-breakpoint-down(md){
+
+        @include media-breakpoint-down(md) {
             display: none;
         }
-       
+
 
     }
-    .container-img{
+
+    .paragraph a {
+
+        color: black !important;
+        text-decoration-line: none !important;
+
+    }
+
+    .container-img {
         width: 20px;
         max-height: 21px;
         margin-right: 3%;
-        margin-bottom:2% ;
-        .img-social{
+        margin-bottom: 2%;
+
+        .img-social {
             width: 100%;
             height: 100%;
-            object-fit:cover;
+            object-fit: cover;
 
         }
     }
-    .social-mobile{
+
+    .social-mobile {
         display: none;
-        @include media-breakpoint-down(md){
+
+        @include media-breakpoint-down(md) {
             display: block;
-        .paragraph-mobile{
-            text-align: center;
-            font-size: 17px;
-            font-weight: bold;
-            margin: 3%;
+
+            .paragraph-mobile {
+                text-align: center;
+                font-size: 17px;
+                font-weight: bold;
+                margin: 3%;
+            }
         }
-        }
-        .container-img-mobile{
+
+        .container-img-mobile {
             width: 100%;
             justify-content: space-around;
             padding: 10px;
 
-            .img-social-mobile{
+            .img-social-mobile {
                 min-width: 35px;
                 min-height: 35px;
             }
         }
     }
-    .accordion{
+
+    .accordion {
         display: none;
-        @include media-breakpoint-down(md){
+
+        @include media-breakpoint-down(md) {
             display: block;
         }
-        
-        .accordion-header{
-           
-            }
-    
-        }
-    
-    .footer-row{
+
+        .accordion-header {}
+
+    }
+
+    .footer-row {
         background-color: #001136;
-        .footer-row a{
-            color: white !important;
-            text-decoration-line:none;
-        }
-        
-        .text-right-custom{
+
+        .text-right-custom {
             text-align: end;
-            @include media-breakpoint-down(md){
+            color: white;
+
+            @include media-breakpoint-down(md) {
                 text-align: start;
                 margin: 2%;
                 color: white;
             }
         }
     }
-    
+    .footer-row a {
+        color: white !important;
+        text-decoration-line: none;
+    }
+
 }
