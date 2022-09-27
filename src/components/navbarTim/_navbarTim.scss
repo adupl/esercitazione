@@ -33,6 +33,30 @@
             bottom: 0;
             right: 50%;
         }
+
+    }
+
+    @media (max-width: 600px) {
+        .upper-navbar-tim {
+            .upperNav-items {
+                justify-content: space-around !important;
+
+                .upper-option {
+                    white-space: nowrap;
+                    font-size: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 1px;
+
+                    &.option-active {
+                        font-weight: bold;
+                    }
+
+                }
+
+
+                .option-active::after {}
+            }
+        }
     }
 }
 
@@ -47,6 +71,14 @@
 
     .navbar-items {
 
+        &.mobile {
+            display: none;
+
+            @media (max-width:960px) {
+                display: flex;
+            }
+        }
+
         .item {
             flex-direction: column;
             font-weight: 500;
@@ -57,9 +89,9 @@
 
             .logo-carrello {
                 height: 20px;
-
             }
-            .logo-cerca{
+
+            .logo-cerca {
                 height: 20px;
                 margin-left: 2px;
             }
@@ -84,6 +116,11 @@
         .item:last-child span {
             margin-top: 20px;
         }
+
+        @media (max-width:960px) {
+            display: none !important;
+        }
+
     }
 }
 
@@ -129,6 +166,15 @@
                     text-decoration: none;
                 }
 
+                .under-navbar-item a:not(.collapsed) {
+                    color: #004490;
+                    font-weight: bold;
+
+                    &::after {
+                        transform: rotateX(180deg);
+                    }
+                }
+
                 .under-navbar-item a::after {
                     display: inline-block;
                     margin-left: 0.255em;
@@ -162,11 +208,16 @@
                 align-items: center;
                 margin-right: 15px;
 
-                &.active {
+                &.show {
                     color: #004490;
                     font-weight: bold;
                     border-bottom: 2px solid #004490;
+                }
 
+                &.dropdown-toggle.show {
+                    &::after {
+                        transform: rotateX(180deg);
+                    }
                 }
             }
 
