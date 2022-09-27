@@ -4,8 +4,8 @@
 
 $(document).ready(() => {
     if ($('#wrap-navTim').length) {
-
-        console.log('Start JS navbar example');
+        
+        console.log('Start JS navbar example', $('.under-navbar-items.mobile .under-navbar-item'));
        
         $('.under-navbar-item ').on('show.bs.dropdown', (e)=> {
             $(e.currentTarget).find('.under-nav-togg').addClass('active');
@@ -21,7 +21,14 @@ $(document).ready(() => {
         });
 
 
-
+      $('.under-navbar-items.mobile').slick({ 
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: false,
+            nextArrow: false,
+            dots: false,
+        }); 
 
 
     }

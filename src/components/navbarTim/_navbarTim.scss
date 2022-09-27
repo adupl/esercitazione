@@ -1,4 +1,8 @@
 .wrap_tim_navbar {
+    a {
+        text-decoration: none;
+    }
+
     .upper-navbar-tim {
         height: 36px;
         background-color: #fff;
@@ -11,12 +15,13 @@
             text-decoration: none;
             position: relative;
             text-align: center;
+
             &.option-active {
                 font-weight: bold;
             }
-           
+
         }
-       
+
 
         .option-active::after {
             content: "";
@@ -52,6 +57,11 @@
 
             .logo-carrello {
                 height: 20px;
+
+            }
+            .logo-cerca{
+                height: 20px;
+                margin-left: 2px;
             }
         }
 
@@ -90,6 +100,53 @@
         justify-content: start;
         margin-left: 110px;
 
+        &.mobile {
+            display: none;
+            margin-left: 0px;
+
+            @media (max-width:961px) {
+                display: flex;
+
+                .under-navbar-item {
+                    white-space: nowrap;
+                    width: 100%;
+                    position: unset;
+                    font-weight: 500;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+
+
+                    .slick-track {
+                        width: initial !important;
+                    }
+
+                }
+
+                .under-navbar-item a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .under-navbar-item a::after {
+                    display: inline-block;
+                    margin-left: 0.255em;
+                    vertical-align: 0.255em;
+                    content: "";
+                    border-top: 0.3em solid;
+                    border-right: 0.3em solid transparent;
+                    border-bottom: 0;
+                    border-left: 0.3em solid transparent;
+                }
+
+            }
+        }
+
+        @media (max-width:960px) {
+            display: none;
+        }
+
         .under-navbar-item {
             position: unset;
             font-weight: 500;
@@ -97,6 +154,7 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
+
 
             .under-nav-togg {
                 height: 100%;
@@ -108,7 +166,7 @@
                     color: #004490;
                     font-weight: bold;
                     border-bottom: 2px solid #004490;
-                    
+
                 }
             }
 
@@ -116,7 +174,8 @@
                 position: absolute;
                 width: 100%;
                 padding: 0px;
-                margin-top: -3px!important;
+                margin-top: -3px !important;
+
                 a {
                     text-decoration: none;
                     color: black;
@@ -148,7 +207,7 @@
 
                     .digitalStore-column {
                         padding: 0px;
-                        padding-left: 144px;
+                        padding-left: 75px;
                         padding-top: 44px;
                     }
 
@@ -167,28 +226,50 @@
                     }
                 }
             }
+
         }
     }
 }
 
-
-.drop-result {
-    background-color: aliceblue;
-    border: 1px solid rgb(173, 173, 173);
-
-    .btn-accedi {
-        background-color: #0033a2;
-        color: white;
-        border-radius: 0px;
+@media (min-width:962px) {
+    .dropTim-mobile {
+        display: none;
     }
+}
 
-    .digitalStore-column {
-        padding: 20px;
+@media (max-width:961px) {
 
-    }
+    .dropTim-mobile {
+        .dropTim-card {
+            background-color: #fff;
+            border: 1px solid rgb(173, 173, 173);
 
-    .option-columns-tim {
-        font-size: 16px;
-        padding: 54px;
+            .btn-accedi {
+                width: 100%;
+                max-width: 130px;
+                margin-top: 49px;
+                background-color: #0033a2;
+                color: white;
+                border-radius: 0px;
+                margin-bottom: 50px;
+            }
+
+            .btn-accedi::after {
+                display: inline-block;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                content: "";
+                border-top: 0.3em solid transparent;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0.3em solid transparent;
+                border-left: 0.3em solid;
+            }
+
+            .dropTim-accordions {
+                .titolo-accord {
+                    background-color: #fff;
+                }
+            }
+        }
     }
 }

@@ -33,6 +33,9 @@
 
             
         }
+        .carousel-servizi-2{
+            position: relative;
+        }
         
 
         .slick-dots li button {
@@ -48,11 +51,43 @@
             border-color: white;
         }
         .slick-prev{
+            position: absolute;
+            top: 25%;
+            padding: 10px;
+            border: solid;
+            border-width: thin;
+            z-index: 1;
             border-color: white;
         }
         .slick-next{
+            position: absolute;
+            top: 33%;
+            padding: 10px;
+            border: solid;
+            border-width: thin;
             border-color: white;
         }
+        .slick-slide{
+            margin-right: 30px;
+        }
+    
+        .slick-list{
+            margin-left: 5%;
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 1rem 0;
+            list-style-type: disc;
+            }  
+            
+            .slick-dots li {
+                display: inline-block;
+                margin: 0 5px;
+            } 
+            
+           
         
 
 }
