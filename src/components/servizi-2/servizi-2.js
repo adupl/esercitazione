@@ -1,6 +1,6 @@
 $(document).ready(() => {
     
-    if ($('#Servizi_in_evidenza').length) {
+    if ($('#Servizi_2_wrap').length) {
         console.log('Start JS Slickjs example');
 
         $('.carousel-servizi-2').slick({ 
