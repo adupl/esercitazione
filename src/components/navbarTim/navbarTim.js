@@ -19,6 +19,9 @@ $(document).ready(() => {
             $(e.currentTarget).addClass('option-active');
         });
 
+        $('#mobile-drop-wrapper').on('show.bs.collapse','.collapse', function() {
+            $('#mobile-drop-wrapper').find('.collapse.show').collapse('hide');
+        });
 
       $('.under-navbar-items.mobile').slick({ 
             infinite: false,
@@ -27,6 +30,18 @@ $(document).ready(() => {
             prevArrow: false,
             nextArrow: false,
             dots: false,
+            responsive: [
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots:false,
+                        prevArrow: false,
+                        nextArrow: false                        
+                    }
+                }
+            ]
         }); 
 
 
