@@ -20,7 +20,7 @@
             min-height: 520px;
         }
         &.mid{
-            min-height: 470px;
+            min-height: 485px;
         }
     }
     .card-title{
@@ -38,6 +38,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .bottom-content{
+            margin-top: 20px;
+        }
 
         .description-wrap{           
             max-height: 75px;
