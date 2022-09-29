@@ -1,9 +1,11 @@
 @media (max-width: 768px) {
     .top-solution {flex-flow: column-reverse;}
-    .btn-solution-wrap{margin-bottom: 25px; margin-top:30px!important;}  
-    .content-info-txt{margin-top: 30px;}
-    .content-partner{flex-direction: column;}
-    .btn-partner-wrap{align-self: center!important; margin-top: 15px;}
+    .btn-solution-wrap{margin-bottom: 25px; margin-top:30px!important; inline-size: auto!important;}  
+    .content-info-txt{margin-top: 30px; width: 100%!important;}
+    .content-partner{flex-direction: column; max-width: 320px!important; display: initial!important;}
+    .btn-partner-wrap{align-self: center!important; margin-top: 15px;width: 100%!important;}
+    .partner-text{text-align: center; }
+    .becomes-partner{padding: 23px 27px 30px 14px!important;}
     }
 
 .solution-dig{
@@ -24,7 +26,7 @@
                 background-color: white;
                 padding: 10px;
                 margin-top: 70px;
-                width: fit-content; 
+                inline-size: fit-content;
 
                 .solution-btn {
                     color: #0164f2;
@@ -40,15 +42,19 @@
         
         .becomes-partner{
             background-color: #0164f2;
-            padding: 30px 0px;
+            padding: 59px 103px 48px 140px;
             color: white;
             justify-content: center;
             .content-partner{
-                max-width: 990px;
-                .tim-open-text{
+                max-width: 100%;
+                .partner-text{
+                    text-align: initial;
+                    .tim-open-text{
                     max-width: 330px;
                     margin-top: 25px;
                 }
+                }
+                
                 .btn-partner-wrap{
                 border: solid;      
                 border-color: #0164f2;

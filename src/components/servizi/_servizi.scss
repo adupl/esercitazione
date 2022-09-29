@@ -1,4 +1,11 @@
+@media (max-width: 768px) {
+    .all-services{flex-direction: column; align-items: center; width: 100%!important;}
+    .primary-wrap{margin: 0px!important; width: 100%;}
+    .solution-wrap{width: 100%!important;}
+    .btn-solution{width: 100%;}
+}
 .servizi_evidenza{
+
     background-color: white;
     .servizi-title{
         text-align: center;
@@ -9,6 +16,13 @@
     }
     .menu-wrap{
         margin-top: 15px;
+
+
+        &.desktop{
+            
+            @media (max-width: 840px){
+                display: none;
+            }
         .menu{
             max-height: 40px;
             width: 100%;
@@ -24,6 +38,29 @@
                 border-bottom: 4px solid;
                 border-color: blue;
             }
+        }
+    }
+        &.mobile{
+            margin: 10px 27px 0px;
+            
+            @media (min-width: 841px){
+                display: none;
+            }
+            .btn-menu-dd{
+                border-radius: 0px;
+                background-color: #0050c1;
+            }
+            .menu-dd{
+                border-radius: 0px;
+                margin-top: 10px!important;
+                background-color: white;
+                .dropdown-item{
+                    margin-top: 5px;
+                    font-weight: bold;
+                }
+                
+            }
+                  
         }
     }
     
@@ -53,7 +90,6 @@
         padding: 4%;
     }
     .btn-solution{
-        text-align: right;
         padding: 4%;
     }
     .primary-wrap{
@@ -101,5 +137,4 @@
         background-color: blue;
         border-color: blue;
     }
-   
 }
