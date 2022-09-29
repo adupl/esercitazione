@@ -5,6 +5,10 @@
             position: absolute;
             width: fit-content;
         }
+
+        .head{
+            z-index: 1;
+        }
         .title-wrap{
             text-align: center;
             justify-content: center;
@@ -25,7 +29,7 @@
                     display: none;
                 }
                 .menu-item-2{
-                    max-height: 43px;
+                    min-height: 45px;
                     .menu-link-2{
                         color: white; 
                         height: 100%; 
