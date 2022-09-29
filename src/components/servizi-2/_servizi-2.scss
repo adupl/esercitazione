@@ -3,6 +3,7 @@
     min-height: 810px;
         .img-wrap{
             position: absolute;
+            width: fit-content;
         }
         .title-wrap{
             text-align: center;
@@ -23,18 +24,18 @@
                 @media (max-width: 840px){
                     display: none;
                 }
-            .menu-item-2{
-                max-height: 43px;
-                .menu-link-2{
-                    color: white; 
-                    height: 100%; 
-                }
-                .menu-link-2:hover{
-                    font-weight: bold;
-                    color: white;
-                    border-bottom: 4px solid;
-                    border-color: white;
-                }
+                .menu-item-2{
+                    max-height: 43px;
+                    .menu-link-2{
+                        color: white; 
+                        height: 100%; 
+                    }
+                    .menu-link-2:hover{
+                        font-weight: bold;
+                        color: white;
+                        border-bottom: 4px solid;
+                        border-color: white;
+                    }
             }
             }
 
