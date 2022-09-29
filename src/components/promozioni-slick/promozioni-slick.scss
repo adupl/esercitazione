@@ -5,8 +5,8 @@
         font-weight: bold;
         line-height: 1.31;
         color: white;
-        text-align: center;
-        padding: 7%;
+        text-align: start;
+        padding: 10px 0;
     }
     .title-promo-2{
         font-size: 32px;
@@ -24,22 +24,52 @@
         color: white;
         font-size: 18px;
         font-weight: bold;
-        text-align: center;
-    }
-    .container-img{
+        text-align: start;
         width: 100%;
-        height: 100%;
+        margin: 0;
+        height: unset;
+        background-color: transparent;
+        text-indent: 0px;
+        padding: 10px 0;
+        border: none;
+        position: relative;
+        &:hover{
+            &:after{
+                width: 20%;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                height: 3px;
+                background: aquamarine;
+                padding: 5px;
+            }
+        }
+    }
+    .promotions-link:after{
+        content:"";
+    }
+   
         .img-promo{
+            @include media-breakpoint-down(md){
             width: 100%;
             height: 100%;
             object-fit:contain;
+            }
         }
-    }
     .button-offer{
-        width: 217px;
-        height: 48px;
-        margin: 38px 0 0 204px;
-        padding: 15px 16px 14px 20px;
+        padding: 10px 20px;
         background-color: #fff;
+    }
+    .slick-menu{
+        position: unset;
+        padding: 50px;
+        margin-left: unset;
+        margin-bottom: unset;
+        margin-right: unset;
+    }
+    .slick-img{
+        position: relative;
+        overflow: hidden;
+        width: 66.6%;
     }
 }
