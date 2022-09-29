@@ -19,8 +19,10 @@ $(document).ready(() => {
             $(e.currentTarget).addClass('option-active');
         });
 
-        $('#mobile-drop-wrapper').on('show.bs.collapse','.collapse', function() {
-            $('#mobile-drop-wrapper').find('.collapse.show').collapse('hide');
+        $('#mobile-drop-wrapper').on('show.bs.collapse','.dropTim-mobile', function(e) {
+            if(e.currentTarget.id === 'mobile-drop-wrapper'){
+            $('#mobile-drop-wrapper').find('.dropTim-mobile.collapse.show').collapse('hide');
+            }
         });
 
       $('.under-navbar-items.mobile').slick({ 
