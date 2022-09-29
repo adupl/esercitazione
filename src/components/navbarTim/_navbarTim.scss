@@ -62,32 +62,38 @@
     background-color: #004490;
     width: 100%;
     height: 64px;
+
     .button-sideBar {
         height: 100%;
         min-width: 40px;
         margin-right: 10px;
-       .iconaBurger{
-        color: #fff !important;
-       }
+
+        .iconaBurger {
+            color: #fff !important;
+        }
     }
 
     .sidebarTim {
         background-color: #004490;
-        
+
         .sideTim-head {
             border-bottom: 1px solid #03cfd37a;
+
             .tim-logo {
                 max-height: 50px;
             }
-            .iconClose{
+
+            .iconClose {
                 color: #fff;
-            } 
+            }
         }
-        .sideTim-body{
-            .sideTim-search{
+
+        .sideTim-body {
+            .sideTim-search {
                 color: #6990fa7a;
                 border-radius: unset;
             }
+
             .sideTim-link {
                 color: #fff !important;
             }
@@ -99,8 +105,8 @@
     }
 
     .navbar-items {
-        
-        
+
+
 
         .item {
             flex-direction: column;
@@ -146,7 +152,7 @@
         */
     }
 
-       
+
 
 }
 
