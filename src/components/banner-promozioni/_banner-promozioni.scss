@@ -20,6 +20,9 @@
 
     .carousel-indicators {
         right: 20%;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0;
+        }
     }
 
     .icon-button {

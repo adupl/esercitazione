@@ -1,6 +1,5 @@
 .container-footer {
     .tim-logo {
-        margin-top: 6%;
         margin-left: 3%;
 
         @include media-breakpoint-down(md) {
@@ -14,10 +13,10 @@
         line-height: 1.70;
         color: #000;
         font-weight: normal;
-        padding: 2%;
+        padding: 0 2% 2% 2%;
         display: block;
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             display: none;
         }
 
@@ -48,7 +47,7 @@
     .social-mobile {
         display: none;
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             display: block;
 
             .paragraph-mobile {
@@ -74,7 +73,7 @@
     .accordion {
         display: none;
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             display: block;
         }
 

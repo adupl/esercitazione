@@ -40,6 +40,24 @@ p{
 LAYOUT
 *********************/
 
+.accordion-button:not(.collapsed){
+	color: #0033a2;
+	box-shadow: none;
+	background: #fff;
+}
+.accordion-body{
+	background-color: #fff;
+}
+.accordion-button{
+	background: #fff;
+	font-weight: 600;
+}
+.accordion-button:focus{
+	border: none;
+	box-shadow: none!important;
+    background: #fff;
+}
+
 .row{
 	margin-left: 0;
 	margin-right: 0;

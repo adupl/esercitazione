@@ -27,17 +27,23 @@
             max-height: 40px;
             width: 100%;
             align-items: end; 
-            .menu-link{
-                font-family: Arial, Helvetica, sans-serif;
-                color: black;
-                height: 100%;
+            .menu-item{
+                min-height: 50px;
+                min-width: 180px;
+                .menu-link{
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: black;
+                    height: 100%;
+                    text-align: center;
+                }
+                .menu-link:hover{
+                    color: blue;
+                    font-weight: bold;
+                    border-bottom: 4px solid;
+                    border-color: blue;
+                }
             }
-            .menu-link:hover{
-                color: blue;
-                font-weight: bold;
-                border-bottom: 4px solid;
-                border-color: blue;
-            }
+           
         }
     }
         &.mobile{
@@ -105,10 +111,14 @@
 
     .slick-slide{
         margin-right: 30px;
+        height: unset;
     }
 
     .slick-list{
         margin-left: 5%;
+        .slick-track{
+            display: flex;
+        }
     }
 
     .slick-dots{

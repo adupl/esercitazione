@@ -367,6 +367,17 @@
             }
 
             .dropTim-accordions {
+                .accordion-button:not(.collapsed){
+                    color: #0033a2;
+                    box-shadow: none;
+                }
+                .accordion-body{
+                    background-color: #fff;
+                }
+                .accordion-button:focus{
+                    border: none;
+                    box-shadow: none;
+                }
                 .titolo-accord {
                     background-color: #fff;
                 }
